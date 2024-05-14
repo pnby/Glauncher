@@ -1,5 +1,6 @@
 package me.pink.glauncher.listeners
 
+import me.pink.glauncher.GlauncherInstance
 import me.pink.glauncher.handlers.spawnTNT
 import me.pink.glauncher.utils.hasNBTKey
 import org.bukkit.entity.Arrow
@@ -16,6 +17,8 @@ class CrossbowLaunch : Listener {
         val arrowEntity = event.projectile
         val shooter = event.entity
 
+        val plugin = GlauncherInstance.instance ?: return
+
         if (!hasNBTKey(bow, "GLauncher", "MLauncher")) {
             return
         }
@@ -25,12 +28,12 @@ class CrossbowLaunch : Listener {
 
 
             if (hasNBTKey(bow, "GLauncher", "MLauncher") && !hasNBTKey(arrowItemStack, "GLauncher", "Arrow")) {
-                event.isCancelled = true
                 return
             }
 
             if (shooter is Player) {
-                spawnTNT(shooter, 2.0)
+                spawnTNT(shooter, plugin.getValueFromConfig("tnt-speed").toDouble())
+                arrowEntity.remove()
                 return
             }
         }

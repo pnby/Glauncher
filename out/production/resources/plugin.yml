@@ -1,6 +1,6 @@
 name: Glauncher
 version: '1.0'
-main: me.pink.glauncher.Glauncher
+main: me.pink.glauncher.GrenadeLauncher
 api-version: '1.20'
 load: STARTUP
 depend:
@@ -12,7 +12,12 @@ commands:
     usage: /gl <subcommand>
     aliases: [glauncher]
 
+
 subcommands:
+  reload:
+    description: Перезагружает конфиг плагина
+    usage: /gl reload
+
   give:
     description: Выдает предмет с уникальным NBT тэгом
     usage: /gl give <launcher/grenade> <player>

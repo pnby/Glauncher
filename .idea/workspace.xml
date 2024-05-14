@@ -9,14 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e42af3bc-7c57-4c17-bba9-e3ce1213bc51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="e42af3bc-7c57-4c17-bba9-e3ce1213bc51" name="Changes" comment="Added special bullet for Glauncher">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/GrenadeLauncher.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Glauncher_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Glauncher_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Glauncher.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/Glauncher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/Glauncher.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/commands/GiveCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/commands/CrossbowCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/handlers/ItemCreate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/handlers/CrossbowCreate.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/handlers/SkullLaunch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/handlers/TNTLaunch.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/Glauncher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/GrenadeLauncher.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/commands/CrossbowCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/commands/CrossbowCommand.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/listeners/CrossbowLaunch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/listeners/CrossbowLaunch.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
@@ -79,6 +84,10 @@
     &quot;accountId&quot;: &quot;733f813f-3d6f-45b0-b99f-42ff9255f013&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -88,33 +97,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build Glauncher.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Glauncher [wrapper].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Glauncher build.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/IdeaProjects/Glauncher/src/main/resources/config.yml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.62528735&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build Glauncher.executor": "Run",
+    "Gradle.Glauncher [wrapper].executor": "Run",
+    "Gradle.Glauncher build.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/PC/IdeaProjects/Glauncher/src/main/resources/plugin.yml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.62528735",
+    "settings.editor.selected.configurable": "project.kotlinCompiler",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;kotlin-gradle-user-dirs&quot;: [
-      &quot;C:\\Users\\PC\\.gradle&quot;
+  "keyToStringList": {
+    "jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": [
+      "17=C:/Program Files/Java/jdk-17"
+    ],
+    "kotlin-gradle-user-dirs": [
+      "C:\\Users\\PC\\.gradle"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Glauncher build" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
@@ -137,6 +150,19 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
       <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Glauncher" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Glauncher" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="SharedIndexes">
@@ -163,7 +189,8 @@
       <workItem from="1715590700932" duration="18611000" />
       <workItem from="1715615584232" duration="7190000" />
       <workItem from="1715675789692" duration="6290000" />
-      <workItem from="1715687640776" duration="2554000" />
+      <workItem from="1715687640776" duration="8877000" />
+      <workItem from="1715703744285" duration="7077000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed config loading">
       <option name="closed" value="true" />
@@ -173,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715676601298</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added special bullet for Glauncher">
+      <option name="closed" value="true" />
+      <created>1715690282539</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715690282539</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +216,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed config loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed config loading" />
+    <MESSAGE value="Added special bullet for Glauncher" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added special bullet for Glauncher" />
   </component>
 </project>
