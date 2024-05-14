@@ -1,6 +1,6 @@
 package me.pink.glauncher
 
-import me.pink.glauncher.commands.GiveItemCommand
+import me.pink.glauncher.commands.CrossbowCommand
 import me.pink.glauncher.listeners.CrossbowLaunch
 import me.pink.glauncher.listeners.TNTExplosionHandler
 import org.bukkit.event.Listener
@@ -10,13 +10,14 @@ object GlauncherInstance {
     var instance: Glauncher? = null
 }
 
-class Glauncher : JavaPlugin(), Listener { // Переместить все взаимодействия с API в отдельную директорию
+class Glauncher : JavaPlugin(), Listener {
     private var configurations: Configurations? = null
 
     override fun onEnable() {
         server.pluginManager.registerEvents(CrossbowLaunch(), this)
         server.pluginManager.registerEvents(TNTExplosionHandler(), this)
-        getCommand("gl")?.setExecutor(GiveItemCommand())
+
+        getCommand("gl")?.setExecutor(CrossbowCommand())
 
         configurations = Configurations(this)
         configurations?.load()

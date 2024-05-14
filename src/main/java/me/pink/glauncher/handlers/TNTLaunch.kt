@@ -1,6 +1,5 @@
 package me.pink.glauncher.handlers
 
-import me.pink.glauncher.Glauncher
 import me.pink.glauncher.GlauncherInstance
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Player

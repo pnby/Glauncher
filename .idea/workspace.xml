@@ -10,14 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e42af3bc-7c57-4c17-bba9-e3ce1213bc51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/Glauncher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/Glauncher.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/commands/GiveCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/commands/GiveCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/handlers/SkullLaunch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/handlers/SkullLaunch.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/commands/GiveCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/commands/CrossbowCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/handlers/ItemCreate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/handlers/CrossbowCreate.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/handlers/SkullLaunch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/handlers/TNTLaunch.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/listeners/CrossbowLaunch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/listeners/CrossbowLaunch.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/listeners/ExplodeHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pink/glauncher/listeners/ExplodeHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,11 +162,25 @@
       <workItem from="1715504922753" duration="1522000" />
       <workItem from="1715590700932" duration="18611000" />
       <workItem from="1715615584232" duration="7190000" />
-      <workItem from="1715675789692" duration="787000" />
+      <workItem from="1715675789692" duration="6290000" />
+      <workItem from="1715687640776" duration="2554000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed config loading">
+      <option name="closed" value="true" />
+      <created>1715676601298</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715676601298</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed config loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed config loading" />
   </component>
 </project>

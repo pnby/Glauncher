@@ -15,4 +15,4 @@ commands:
 subcommands:
   give:
     description: Выдает предмет с уникальным NBT тэгом
-    usage: /gl give <material>
+    usage: /gl give <launcher/grenade> <player>
