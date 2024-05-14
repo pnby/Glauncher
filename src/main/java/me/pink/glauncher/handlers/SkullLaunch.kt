@@ -1,6 +1,7 @@
 package me.pink.glauncher.handlers
 
 import me.pink.glauncher.Glauncher
+import me.pink.glauncher.GlauncherInstance
 import org.bukkit.entity.EntityType
 import org.bukkit.entity.Player
 import org.bukkit.entity.TNTPrimed
@@ -8,10 +9,8 @@ import org.bukkit.util.Vector
 import kotlin.math.cos
 import kotlin.math.sin
 
-val power = Glauncher().getValueFromConfig("explosion-power")
-val fuseTicks = Glauncher().getValueFromConfig("tnt-fuse-ticks")
-
 fun spawnTNT(player: Player, speed: Double) {
+    val plugin = GlauncherInstance.instance ?: return
     val playerLocation = player.eyeLocation
     val playerDirection = getPlayerDirection(player)
     val spawnLocation = playerLocation.add(playerDirection.normalize().multiply(2))
@@ -19,8 +18,7 @@ fun spawnTNT(player: Player, speed: Double) {
 
     val tnt = player.world.spawnEntity(spawnLocation, EntityType.PRIMED_TNT) as TNTPrimed
     tnt.velocity = playerDirection.normalize().multiply(speed)
-    tnt.fuseTicks = fuseTicks
-    tnt.yield = power.toFloat()
+    tnt.fuseTicks = plugin.getValueFromConfig("tnt-fuse-ticks")
 
 }
 

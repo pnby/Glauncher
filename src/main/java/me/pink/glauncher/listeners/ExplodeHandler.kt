@@ -1,6 +1,6 @@
 package me.pink.glauncher.listeners
 
-import me.pink.glauncher.Glauncher
+import me.pink.glauncher.GlauncherInstance
 import org.bukkit.Material
 import org.bukkit.Sound
 import org.bukkit.event.EventHandler
@@ -11,8 +11,8 @@ class TNTExplosionHandler : Listener {
 
     @EventHandler
     fun onTNTExplode(event: EntityExplodeEvent) {
+        val plugin = GlauncherInstance.instance ?: return
         val loc = event.entity.location
-        val explosionChance = Glauncher().getValueFromConfig("obsidian-explosion-chance")
 
         val x = loc.blockX
         val y = loc.blockY
@@ -26,7 +26,7 @@ class TNTExplosionHandler : Listener {
                         if (targetBlock.type == Material.OBSIDIAN || targetBlock.type == Material.CRYING_OBSIDIAN) {
                             val chance = (Math.random() * 100).toInt()
 
-                            if (chance < explosionChance) {
+                            if (chance < plugin.getValueFromConfig("obsidian-explosion-chance")) {
                                 targetBlock.breakNaturally()
                                 loc.world.playSound(loc, Sound.BLOCK_STONE_BREAK, 10f, 1.5f)
                             }

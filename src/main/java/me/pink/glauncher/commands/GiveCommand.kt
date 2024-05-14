@@ -1,6 +1,7 @@
 package me.pink.glauncher.commands
 
 import me.pink.glauncher.handlers.giveItemToPlayer
+import org.bukkit.Bukkit
 import org.bukkit.Material
 import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor
@@ -16,37 +17,44 @@ class GiveItemCommand : CommandExecutor, TabCompleter {
             return true
         }
 
-        if (args.size != 3) {
-            sender.sendMessage("Использование: /gl give <material> <damageModifier>")
+        if (args.size != 2) {
+            sender.sendMessage("Использование: /gl give <player>")
             return true
         }
 
-        val material = Material.getMaterial(args[1].uppercase()) ?: Material.DIAMOND_SWORD
+        val material = Material.getMaterial(Material.CROSSBOW.toString())!!
         val customName = ""
 
-        val itemObj = giveItemToPlayer(sender, material, customName, args[2].toDouble())
+        val receiver = Bukkit.getPlayer(args[1])!!
+
+
+        val itemObj = giveItemToPlayer(receiver, material, customName, 1.0)
         sender.sendMessage("Выдан предмет с параметрами $itemObj")
+
         val argsAsString = args.joinToString(" ")
         sender.sendMessage(argsAsString)
         return true
     }
 
-    override fun onTabComplete(sender: CommandSender, command: Command, alias: String, args: Array<out String>): List<String>? {
-        if (alias.equals("gl", ignoreCase = true) && args.size == 2 && args[0].equals("give", ignoreCase = true) && sender is Player) {
+    override fun onTabComplete(
+        sender: CommandSender,
+        command: Command,
+        alias: String,
+        args: Array<out String>
+    ): List<String>? {
+        if (alias.equals("gl", ignoreCase = true) && args.size == 2 && args[0].equals(
+                "give",
+                ignoreCase = true
+            ) && sender is Player
+        ) {
             val completions = mutableListOf<String>()
-            val partialMaterialName = args[1].lowercase()
 
-            for (material in Material.entries) {
-                val materialName = material.name.lowercase()
-                if (materialName.startsWith(partialMaterialName)) {
-                    completions.add(materialName)
-                }
+            Bukkit.getOnlinePlayers().forEach { player ->
+                completions.add(player.name)
             }
 
             return completions
         }
-
         return null
     }
-
 }

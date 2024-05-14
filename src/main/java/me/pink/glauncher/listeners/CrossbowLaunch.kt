@@ -17,7 +17,7 @@ class CrossbowLaunch : Listener {
         if (shooter is Player) {
             val crossbowItem = shooter.equipment.itemInMainHand
 
-            if (hasNBTKey(crossbowItem, "Glauncher", "Mlauncher")) {
+            if (hasNBTKey(crossbowItem, "Glauncher", "MLauncher")) {
                 projectile.remove()
                 spawnTNT(shooter, 2.0)
             }
